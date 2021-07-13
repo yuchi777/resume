@@ -24,7 +24,6 @@ body {
 
 
 
-
 .board {
     background: rgb(255, 255, 255,0.6);
     
@@ -44,4 +43,79 @@ body {
 #yuchiSkill {
     background: #1e64aa;
     height: 100vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    overflow: auto;
+    text-align: center;
+    color: white;
+}
+
+#yuchiSkill>.container>.icon>.col>img{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 15%;
+    margin-bottom: 5px;
+    animation: position 5s ease-in-out infinite;
+}
+
+#icon1{
+    animation: hello 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#icon2{
+    animation: hello2 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+@keyframes position {
+
+    0% {
+        /* box-shadow:  0px 3px 5px 0px #ffffff; */
+        transform: translateY(0px);
+
+    }
+
+    /* 30%{
+        box-shadow:  0px 40px 50px 5px #3462c7;
+        transform: translateY(-50px)
+    } */
+    50% {
+        box-shadow:  10px 10px 5px 0px #0e508f;
+        transform: translateY(30px)
+    }
+
+    /* 70%{
+        box-shadow:  0px 40px 50px 5px #5a5a5a;
+        transform: translateY(-50px)
+    } */
+    100% {
+        /* box-shadow:  0px 3px 5px 0px #ffffff; */
+        transform: translateY(0px)
+    }
+
+}
+
+@keyframes hello {
+    from {
+        transform: translateX(-500%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes hello2 {
+    from {
+        transform: translateX(500%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
 }
