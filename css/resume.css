@@ -3,108 +3,117 @@ body {
     background: #eee;
 }
 
-#yuchiMenu{
+#yuchiMenu {
     font-size: 0.8rem;
 }
 
+/* yuchiAbout ************************************************************/
+
 #yuchiAbout {
     background: url("../images/camping.jpg");
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     height: 100vh;
-
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     overflow: auto;
 }
 
-
-
 .board {
-    background: rgb(255, 255, 255,0.6);
-    
+    background: rgb(255, 255, 255, 0.6);
     color: rgb(0, 0, 0);
     /* margin: 0px auto; */
     padding: 2%;
     overflow: auto;
 }
 
-.board>img {
-    height: 150px;
-    /* width: 20px; */
-    overflow: hidden;
+.board>div>div>img {
+    opacity: 80%;
 }
 
+.board-1 {
+    background: rgb(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    /* margin: 0px auto; */
+    padding: 2%;
+    overflow: auto;
+    text-align: center;
+}
+
+#aboutImg {
+    height: 150px;
+    /* width: 20px; */
+    /* overflow: hidden; */
+}
+
+
+
+/* yuchiSkill ********************************************************/
 
 #yuchiSkill {
     background: #1e64aa;
     height: 100vh;
-
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     overflow: auto;
     text-align: center;
     color: white;
 }
 
-#yuchiSkill>.container>.icon>.col>img{
+#yuchiSkill>.container>.icon>.col>img {
     width: 100px;
     height: 100px;
-
     border-radius: 15%;
     margin-bottom: 5px;
-    animation: position 5s ease-in-out infinite;
+    /* animation: position 5s ease-in-out infinite ; */
 }
 
-#icon1{
+#yuchiSkill>.container>.icon>.col>img:hover {
+    box-shadow: 10px 10px 0px 0px #0e508f;
+    box-shadow: #99c1f5 -1px 1px, #99c1f5 -2px 2px, #99c1f5 -3px 3px, #99c1f5 -4px 4px, #99c1f5 -5px 5px, #99c1f5 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+    /* animation: position 5s ease-in-out infinite ; */
+}
+
+/* @keyframes position {
+    0% {
+        box-shadow:  0px 3px 5px 0px #ffffff;
+        transform: translateY(0px);
+    }
+
+    50% {
+        box-shadow: 10px 10px 5px 0px #0e508f;
+        transform: translate(-10px -10px)
+    }
+    
+    100% {
+        box-shadow:  0px 3px 5px 0px #ffffff;
+        transform: translateY(0px)
+    }
+} */
+
+#icon1 {
     animation: hello 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#icon2{
+#icon2 {
     animation: hello2 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-@keyframes position {
-
-    0% {
-        /* box-shadow:  0px 3px 5px 0px #ffffff; */
-        transform: translateY(0px);
-
-    }
-
-    /* 30%{
-        box-shadow:  0px 40px 50px 5px #3462c7;
-        transform: translateY(-50px)
-    } */
-    50% {
-        box-shadow:  10px 10px 5px 0px #0e508f;
-        transform: translateY(30px)
-    }
-
-    /* 70%{
-        box-shadow:  0px 40px 50px 5px #5a5a5a;
-        transform: translateY(-50px)
-    } */
-    100% {
-        /* box-shadow:  0px 3px 5px 0px #ffffff; */
-        transform: translateY(0px)
-    }
-
 }
 
 @keyframes hello {
     from {
         transform: translateX(-500%);
     }
-
     to {
         transform: translateX(0px);
     }
@@ -114,8 +123,60 @@ body {
     from {
         transform: translateX(500%);
     }
-
     to {
         transform: translateX(0px);
     }
+}
+/*I work with skills********************************/
+@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+#yuchiSkill p {
+    font-family: Inconsolata, source code pro, consolas, monospace;
+    margin-left: 23%;
+    transform: translateX(-6rem);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* yuchiEmploy********************************************************/
+
+#yuchiEmploy {
+    background: rgb(182, 164, 83);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    /* text-align: center; */
+    color: rgb(27, 93, 155);
+}
+
+.paper {
+    background: rgb(223, 223, 223);
+    box-shadow: 0px 0px 8px 2px #6c6a6a;
+    /* height: 100vh; */
+}
+
+/* yuchiWork********************************************************/
+
+
+
+
+.posts>div {
+    font: 16px/250px Arial;
+    width: 245px;
+    height: 250px;
+    /* float: left; */
+    margin: 20px;
+    /* display: block; */
+    text-align: center;
+    background: rgb(45, 167, 197);
+    color: #fff;
+    border-radius: 5%;
+} 
+
+
+#yuchiWork{
+    background: rgb(48, 104, 117);
+    
 }
