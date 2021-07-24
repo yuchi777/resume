@@ -35,9 +35,12 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <!-- Jquery  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
 
 </head>
 
@@ -105,7 +108,7 @@
 
 
     <!--yuchiAbout-------------------------------------------------------->
-    <div id="yuchiAbout" class="">
+    <section id="yuchiAbout" class="">
 
         <div class="container">
             <div class="row p-5">
@@ -168,13 +171,13 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 
 
 
     <!--yuchiSkill------------------------------------------------------->
-    <div id="yuchiSkill">
+    <section id="yuchiSkill">
         <div id="workWith" class="container">
 
             <div class="row">
@@ -189,10 +192,10 @@
                 <div class="col">
                     <img src="./images/icon/css.png" alt="">
                 </div>
-                <div class="col">
+                <div class="col ">
                     <img src="./images/icon/JS.png" alt="">
                 </div>
-                <div class="col">
+                <div class="col ">
                     <img src="./images/icon/JQuery.png" alt="">
                 </div>
                 <div class="col">
@@ -219,12 +222,12 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 
 
     <!--yuchiEmploy--------------------------------------------------->
-    <div id="yuchiEmploy">
+    <section id="yuchiEmploy">
         <div class="container">
             <div class="paper ">
 
@@ -324,6 +327,7 @@
                             <span>2004／06 - 2007／06</span>
                             <h5>淡江高中</h5>
                             <p>《普通科》</p>
+                            
                         </div>
                     </div>
 
@@ -331,12 +335,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
     <!--yuchiWork--------------------------------------------------->
-    <div id="yuchiWork" class="">
+    <section id="yuchiWork" class="">
 
         <div class="container">
 
@@ -363,7 +367,7 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 
 
@@ -415,8 +419,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="dataQue" class="form-label">主旨</label>
-                    <textarea class="form-control" id="subject" name="subject" rows="1"
-                    placeholder="Title"></textarea>
+                    <textarea class="form-control" id="subject" name="subject" rows="1" placeholder="Title"></textarea>
                 </div>
                 <div class="col-12">
                     <label for="dataMsg" class="form-label">需求說明</label>
@@ -429,13 +432,10 @@
                     <input type="submit" value="確認送出" class="btn btn-primary" name="send">
                 </div>
             </form>
-            
+
         </div>
-        
+
     </section>
-
-
-
 
 
 </body>
@@ -443,6 +443,44 @@
 
 <script>
 
+
+
+
+
+    // nav導覽列欄位Scroll高亮
+    //scroll spy
+    $(window).scroll(() => {
+        spy(); //滾動時執行function spy()
+    })
+
+
+    const spy = function () {
+        const nowat = $(window).scrollTop(); //偵測當前高度
+
+
+        $("section").each(function () {
+            const
+                id = $(this).attr("id"), //哪個section區塊名稱
+                // offset = $(this).offset().top, //section區塊的高度top位置
+                offset = $(this).offset().top - ($("#yuchiMenu").innerHeight()) //section區塊的高度top位置//減掉導覽列高度
+            height = $(this).innerHeight(); //section區塊的整個高度
+            // console.log(`id:${id},
+            //             偵測當前高:${nowat},
+            //             offset區塊top:${offset},
+            //             height區塊高度:${height}`);
+
+
+            if (offset <= nowat && nowat < offset + height) { //section區塊之間
+                $("#yuchiMenu a").removeClass('active');
+                $(`#yuchiMenu a[href='#${id}']`).addClass('active');
+            }
+        })
+
+
+    }
+    spy();//載入頁面先執行spy()函式
+
+    // yuchiWork********************************************************
     $(function () {
         $('.toggles button').click(function () {
             var get_id = this.id;
@@ -460,7 +498,32 @@
 
     });
 
+    // yuchiSkill************************************************************
+    $("#icon1").click(() => {
+        // $("#icon1>.col").animate({rotate: '30deg'},1000);
+        $("#icon1").animate({
+            opacity: 1
+        }, () => {
+            $("#icon2").animate({
+                opacity: 0.3
+            }, () => {
+                $("#icon2").animate({ opacity: 1 }, 2000)
+            });
+        });
+    });
 
+
+    $("#icon2").click(() => {
+        $("#icon2").animate({
+            opacity: 1
+        }, () => {
+            $("#icon1").animate({
+                opacity: 0.3
+            }, () => {
+                $("#icon1").animate({ opacity: 1 }, 2000)
+            });
+        });
+    });
 
     //I work with skills********************************
 

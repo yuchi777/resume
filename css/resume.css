@@ -180,3 +180,19 @@ body {
     background: rgb(48, 104, 117);
     
 }
+
+
+/* nav導覽列項目高亮加底線 */
+.nav-link::after{
+    content: "";
+    height: 2px;
+    background: white;
+    width: 0%;
+    display: block;
+    margin: 1px 0;
+    transition: 1s width ease;
+}
+
+.nav-link.active::after{
+    width: 100%;
+}
