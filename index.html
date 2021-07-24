@@ -89,7 +89,7 @@
                             <a class="nav-link" href="#yuchiWork">
                                 <!-- <span class="mx-1 material-icons-outlined float-lg-start fa-lg">feed</span> -->
                                 <i class="mx-1 fas fa-folder-open fa-1x"></i>
-                                PORTFOLIO
+                                MY WORKS
                             </a>
                         </li>
                         <li class="nav-item ms-1">
@@ -110,8 +110,8 @@
     <!--yuchiAbout-------------------------------------------------------->
     <section id="yuchiAbout" class="">
 
-        <div class="container">
-            <div class="row p-5">
+        <div class="container ">
+            <div class="row p-5 ">
                 <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1 "></div>
                 <div class="board-1 col-xs-12 col-sm-4 col-md-4 col-lg-3">
                     <!-- <div class="aboutImg"></div> -->
@@ -227,13 +227,13 @@
 
 
     <!--yuchiEmploy--------------------------------------------------->
-    <section id="yuchiEmploy">
+    <section id="yuchiEmploy" class="p-5">
         <div class="container">
             <div class="paper ">
 
                 <div class="row mt-5 m-2 bg-light">
 
-                    <div class="col-xs-12 col-sm-12 col-lg-6  list-group accordion px-4 " id="Menu">
+                    <div class="col-xs-12 col-sm-12 col-lg-7  list-group accordion px-4  " id="Menu">
                         <h1 class="my-5 ">EXPERIENCE</h1>
                         <div class="accordion-item " data-bs-toggle="list" data-bs-target="#Img1">
                             <!-- 按鈕 -->
@@ -252,7 +252,8 @@
                             <div id="Text1" class="accordion-collapse collapse show " data-bs-parent="#Menu">
                                 <div class="accordion-body">
                                     <p>
-                                        市場開發並和客戶討論設計風格和活動需求，提供方案選擇並給予報價<br>後續發包各協力商並進場施作，處理現場突發問題，最後專案結案分析
+                                        (1) 市場開發、討論設計和活動需求，提供方案並給予報價<br>
+                                        (2) 發包協力商並進場施作處理問題，專案結案報告
                                     </p>
 
                                 </div>
@@ -277,9 +278,9 @@
                             <div id="Text2" class="accordion-collapse collapse " data-bs-parent="#Menu">
                                 <div class="accordion-body ">
                                     <p>
-                                        Start: 規劃展覽企劃，宣傳並招攬廠商參加展覽，處理相關會計及文宣品製作<br>
-                                        Process: 準備廠商協調會，協調圈選攤位位置和水電裝潢業務，處理客戶問題<br>
-                                        End: 展覽開始進退場作業，處理現場問題，展後並提供分析和報告<br>
+                                        (1) 展覽企劃，宣傳並招攬廠商參加展覽，處理會計及文宣品<br>
+                                        (2) 準備廠商協調會，圈選位置和水電裝潢業務，處理問題<br>
+                                        (3) 展覽開始進退場作業，處理現場問題，展後報告<br>
                                     </p>
                                 </div>
                             </div>
@@ -315,19 +316,25 @@
                     </div>
 
 
-                    <div class="col-xs-12 col-sm-12 col-lg-6  px-4 ">
+                    <div class="col-xs-12 col-sm-12 col-lg-5  px-4 ">
                         <h1 class="my-5 ">EDUCATION</h1>
                         <div class="">
-                            <span>2018</span>
-                            <h5>EV Academy - Cebu</h5>
-                            <p>《ESL Course》</p>
-                            <span>2007／06 - 2011／06</span>
-                            <h5>中國文化大學</h5>
-                            <p>《應用數學系》</p>
-                            <span>2004／06 - 2007／06</span>
-                            <h5>淡江高中</h5>
-                            <p>《普通科》</p>
-                            
+                            <div id="ed1">
+                                <span>2018</span>
+                                <h5>EV Academy - Cebu</h5>
+                                <p>《ESL Course》</p>
+                            </div>
+                            <div id="ed2">
+                                <span>2007／06 - 2011／06</span>
+                                <h5>中國文化大學</h5>
+                                <p>《應用數學系》</p>
+                            </div>
+                            <div id="ed3">
+                                <span>2004／06 - 2007／06</span>
+                                <h5>淡江高中</h5>
+                                <p>《普通科》</p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -340,30 +347,93 @@
 
 
     <!--yuchiWork--------------------------------------------------->
-    <section id="yuchiWork" class="">
+    <section id="yuchiWork" class="pb-5">
 
-        <div class="container">
+        <div class="container pt-2">
 
-            <h1 class="text-info text-center pt-5 ">My Works</h1>
+            <h1 class="text-info text-center pt-5 ">MY WORKS</h1>
+            <!-- 分隔線 -->
             <div class="border-bottom border-info "></div>
 
             <div class=" toggles btn-group-lg text-center m-4 ">
                 <button class=" m-2 btn btn-outline-info" id="showall">Show All</button>
                 <button class=" m-2 btn btn-outline-info" id="web">Web Design</button>
-                <button class=" m-2 btn btn-outline-info" id="ux">UX Design</button>
+                <!-- <button class=" m-2 btn btn-outline-info" id="ux">UX Design</button> -->
                 <button class=" m-2 btn btn-outline-info" id="graphic">Graphic Design</button>
-                <button class=" m-2 btn btn-outline-info" id="motion">Motion Graphic</button>
+                <button class=" m-2 btn btn-outline-info" id="motion">Other</button>
             </div>
 
             <div class="row align-items-center posts">
-                <div class="mx-auto motion post">Motion Design</div>
-                <div class="mx-auto web post">Web Design</div>
-                <div class="mx-auto ux post">UX Design</div>
-                <div class="mx-auto graphic post">Graphic Design</div>
-                <div class="mx-auto web post">Web Design</div>
-                <div class="mx-auto ux post">UX Design</div>
-                <div class="mx-auto motion post">Motion Design</div>
-                <div class="mx-auto graphic post">Graphic Design</div>
+                <div id="web_2" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
+                <div id="web_6" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
+                <div id="other_1" class="mx-auto motion post  frame">
+                    <div class="details">
+                        Others
+                    </div>
+                </div>
+                <div id="web_1" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
+                <div id="graphic_4" class="mx-auto graphic post  frame">
+                    <div class="details">
+                        Graphic Design
+                    </div>
+                </div>
+                <div id="web_4" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
+                <div id="graphic_1" class="mx-auto graphic post  frame">
+                    <div class="details">
+                        Graphic Desig
+                    </div> n
+                </div>
+                <div id="web_3" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
+                <div id="graphic_3" class="mx-auto graphic post  frame">
+                    <div class="details">
+                        Graphic Design
+                    </div>
+                </div>
+                <div id="other_2" class="mx-auto motion post  frame">
+                    <div class="details">
+                        Others
+                    </div>
+                </div>
+                <div id="graphic_2" class="mx-auto graphic post  frame">
+                    <div class="details">
+                        Graphic Design
+                    </div>
+                </div>
+                <div id="web_5" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
+                <div id="graphic_5" class="mx-auto graphic post  frame">
+                    <div class="details">
+                        Graphic Design
+                    </div>
+                </div>
+                <div id="web_7" class="mx-auto web post  frame">
+                    <div class="details">
+                        Web Design
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -374,23 +444,23 @@
 
     <!-- yuchiContact--------------------------------------------->
 
-    <section id="yuchiContent" class="py-5 bg-dark ">
-        <div class="container pt-5">
-            <header class="h2 text-warning mb-4 text-center">
-                聯絡我們
+    <section id="yuchiContent" class="">
+        <div class="container pt-5 ">
+            <header class="h2 text-secondary mb-5 pt-1 ">
+                CONTACT
             </header>
 
 
-            <form class="row py-5 gy-4 text-light " action="" method="POST">
-                <div class="col-12 col-md-6">
+            <form id="form" class="row  gy-3 text-dark border border-secondary mb-5 bg-light" action="" method="POST">
+                <div class="col-12 ">
 
-                    <label for="dataUser" class="form-label">姓名</label>
+                    <label for="dataUser" class="form-label">Name:</label>
                     <div class="input-group">
                         <!-- 輸入姓名 -->
                         <input type="text" class="form-control" id="dataUser" name="dataUser" placeholder="Full Name"
                             required>
                         <!-- 性別 -->
-                        <div class="input-group-text">
+                        <!-- <div class="input-group-text">
 
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" id="dataSexM" name="dataSex" type="radio" value="male">
@@ -401,44 +471,51 @@
                                     value="female">
                                 <label class="form-check-label" for="dataSexF">Female</label>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
 
 
-                <div class="col-12 col-md-6">
-                    <label for="dataTel" class="form-label">連絡電話</label>
+                <div class="col-12 ">
+                    <label for="dataTel" class="form-label">Moblie Phone:</label>
                     <input type="tel" class="form-control" id="dataTel" name="dataTel" placeholder="Phone Number"
                         required>
                 </div>
-                <div class="col-12 col-md-6">
-                    <label for="dataMail" class="form-label">電子信箱</label>
+                <div class="col-12 ">
+                    <label for="dataMail" class="form-label">E-mail:</label>
                     <input type="email" class="form-control" id="dataMail" name="dataMail" placeholder="Email Address"
                         required>
                 </div>
-                <div class="col-12 col-md-6">
-                    <label for="dataQue" class="form-label">主旨</label>
+                <div class="col-12">
+                    <label for="dataQue" class="form-label">Title:</label>
                     <textarea class="form-control" id="subject" name="subject" rows="1" placeholder="Title"></textarea>
                 </div>
                 <div class="col-12">
-                    <label for="dataMsg" class="form-label">需求說明</label>
-                    <textarea class="form-control" id="dataMsg" name="dataMsg" rows="10"
+                    <label for="dataMsg" class="form-label">Content:</label>
+                    <textarea class="form-control" id="dataMsg" name="dataMsg" rows="5"
                         placeholder="Writer Your Message..."></textarea>
                 </div>
                 <div class="col-12 text-center">
-                    <div class="form-text">請如實填寫便於信件回覆，我們保證不隨意公開您的留言資訊</div>
-                    <hr>
-                    <input type="submit" value="確認送出" class="btn btn-primary" name="send">
+                    <!-- <div class="form-text">請如實填寫便於信件回覆，我們保證不隨意公開您的留言資訊</div> -->
+                    <!-- <hr> -->
+                    <input type="submit" value="確認送出" class="btn btn-primary mb-3" name="send">
                 </div>
             </form>
 
-        </div>
 
+        </div>
+        <div id="yuchiArrow" class="position-fixed">
+            <a href="#" class="btn btn-warning text-white rounded-circle  ">
+                <!-- <a href="#" class="btn btn-warning text-white rounded-circle p-2 border-0"> -->
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
     </section>
 
 
 </body>
+
 </html>
 
 <script>
@@ -480,6 +557,10 @@
     }
     spy();//載入頁面先執行spy()函式
 
+
+
+
+
     // yuchiWork********************************************************
     $(function () {
         $('.toggles button').click(function () {
@@ -497,6 +578,14 @@
 
 
     });
+    //yuchiEmploy******************************************************
+
+
+    // $("#yuchiEmploy").scroll(function () {
+    //     console.log("AA")
+    // });
+
+
 
     // yuchiSkill************************************************************
     $("#icon1").click(() => {

@@ -17,16 +17,74 @@
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
   <style>
-    
+   
 
+    /* .container {
+      max-width: 720px;
+      margin: 24px auto 48px auto;
+    } */
 
+ 
+    /* .column {
+      display: inline-block;
+      text-align: center;
+    } */
+
+    /* Craeted refering to LittleSnippets.net Pen: https://codepen.io/littlesnippets/pen/adLELd */
+    /* 
+    .frame img {
+      width: 300px;
+      height: 300px;
+    } */
+
+    .frame {
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      perspective: 500px;
+    }
+
+    .frame .details {
+      width: 70%;
+      height: 80%;
+      padding: 5% 8%;
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotateY(90deg);
+      transform-origin: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      opacity: 0;
+      transition: all 0.4s ease-in;
+
+    }
+
+    .frame:hover .details {
+      transform: translate(-50%, -50%) rotateY(0deg);
+      opacity: 1;
+    }
   </style>
 
 </head>
 
 <body>
 
-  
-</body>
+  <div class="container">
+    <class class="row">
+      <div class="frame ">
 
+        <img src="https://pbs.twimg.com/profile_images/378800000601617732/9e87878ffdd67333ac8b81f9da22696a_400x400.jpeg">
+
+        <div class="details">
+          <h1>Lorem</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lorem nunc, sollicitudin a nisi sodales,
+            imperdiet dignissim enim. Nam sapien quam</p>
+        </div>
+
+      </div>
+    </class>
+  </div>
+
+</body>
 </html>
