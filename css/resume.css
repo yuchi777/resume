@@ -234,7 +234,7 @@ body {
 
 #graphic_4 {
     background: url("../images/graphic/006.jpg");
-    background-size: 250px 250px;
+    background-size: cover;
 }
 
 #graphic_5 {
@@ -254,7 +254,7 @@ body {
 
 #web_3 {
     background: url("../images/web/003.jpg");
-    background-size: 250px 250px;
+    background-size: cover;
 }
 
 #web_4 {
@@ -269,7 +269,7 @@ body {
 
 #web_6 {
     background: url("../images/web/006.jpg");
-    background-size: 250px 250px;
+    background-size: cover;
     
 }
 
@@ -287,7 +287,7 @@ body {
 
 #other_2 {
     background: url("../images/others/003.jpg");
-    background-size: 650px 250px;;
+    background-size: cover;
     
 }
 
