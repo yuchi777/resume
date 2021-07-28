@@ -15,7 +15,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /* height: 100vh; */
+
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +34,8 @@ body {
 
 .board>div>div>img {
     opacity: 80%;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .board-1 {
@@ -146,7 +149,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* overflow: auto; */
+    overflow: auto;
     /* text-align: center; */
     color: rgb(27, 93, 155);
 }
@@ -155,6 +158,48 @@ body {
     background: rgb(223, 223, 223);
     box-shadow: 0px 0px 8px 2px #6c6a6a;
     /* height: 100vh; */
+}
+
+/* re************************************************************* */
+#re{
+    /* height: 100vh; */
+    background: rgb(182, 164, 83);
+    color: rgb(27, 93, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+   
+}
+
+#re>.container{
+    width: 85%;
+}
+
+#title1,#title2,#title3,#title4  {
+    height: 150px;
+}
+
+#cname1,#cname2,#cname3{
+    background: rgb(9, 81, 122);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    overflow: auto;
+    color: whitesmoke;
+    
+}
+
+#content1,#content2,#content3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    overflow: auto;
 }
 
 /* yuchiWork********************************************************/
@@ -189,12 +234,12 @@ body {
 
 #graphic_4 {
     background: url("../images/graphic/006.jpg");
-    background-size: cover;
+    background-size: 250px 250px;
 }
 
 #graphic_5 {
     background: url("../images/graphic/007.jpg");
-    background-size: cover;
+    background-size:cover;
 }
 
 #web_1 {
@@ -209,7 +254,7 @@ body {
 
 #web_3 {
     background: url("../images/web/003.jpg");
-    background-size: cover;
+    background-size: 250px 250px;
 }
 
 #web_4 {
@@ -219,27 +264,31 @@ body {
 
 #web_5 {
     background: url("../images/web/005.jpg");
-    background-size: cover;
+    background-size: 100%;
 }
 
 #web_6 {
     background: url("../images/web/006.jpg");
-    background-size: cover;
+    background-size: 250px 250px;
+    
 }
 
 #web_7 {
     background: url("../images/web/007.jpg");
     background-size: cover;
+    
 }
 
 #other_1 {
     background: url("../images/others/001.jpg");
     background-size: cover;
+    
 }
 
 #other_2 {
     background: url("../images/others/003.jpg");
-    background-size: cover;
+    background-size: 650px 250px;;
+    
 }
 
 #yuchiWork {
@@ -272,7 +321,7 @@ body {
 }
 
 #yuchiContent {
-    background: rgb(200, 200, 200);
+    background: rgb(193, 201, 198);
 }
 
 #form {
@@ -320,6 +369,10 @@ body {
     right: 5vh;
     bottom: 5vh;
     z-index: 999;
+
+
+    /* 第一頁回TOP消失 */
+        /* display: none;  */
 }
 /*vertical-align(垂直對齊)*/
 /* #yuchiArrow i {
