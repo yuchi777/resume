@@ -264,7 +264,7 @@ body {
 
 #web_5 {
     background: url("../images/web/005.jpg");
-    background-size: 100%;
+    background-size: cover;
 }
 
 #web_6 {
