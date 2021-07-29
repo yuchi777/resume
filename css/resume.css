@@ -3,6 +3,8 @@ body {
     background: #eee;
 }
 
+
+
 #yuchiMenu {
     font-size: 0.8rem;
 }
@@ -57,7 +59,7 @@ body {
 
 #yuchiSkill {
     background: #1e64aa;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,10 +136,13 @@ body {
 @import url("//fonts.googleapis.com/css?family=Inconsolata:700");
 #yuchiSkill p {
     font-family: Inconsolata, source code pro, consolas, monospace;
-    margin-left: 23%;
+    margin-left: 30%;
+    margin-bottom: 100px;
     transform: translateX(-6rem);
     font-size: 24px;
     font-weight: bold;
+
+    
 }
 
 /* yuchiEmploy********************************************************/
@@ -171,14 +176,6 @@ body {
     flex-wrap: wrap;
     overflow: auto;
    
-}
-
-#re>.container{
-    width: 85%;
-}
-
-#title1,#title2,#title3,#title4  {
-    height: 150px;
 }
 
 #cname1,#cname2,#cname3{
@@ -243,12 +240,12 @@ body {
 }
 
 #web_1 {
-    background: url("../images/web/002.jpg");
+    background: url("../images/web/001.jpg");
     background-size: cover;
 }
 
 #web_2 {
-    background: url("../images/web/001.jpg");
+    background: url("../images/web/002.jpg");
     background-size: cover;
 }
 
@@ -256,28 +253,25 @@ body {
     background: url("../images/web/003.jpg");
     background-size: cover;
 }
-
 #web_4 {
     background: url("../images/web/004.jpg");
     background-size: cover;
 }
-
 #web_5 {
     background: url("../images/web/005.jpg");
-    background-size: cover;
+    background-size:contain;
 }
-
 #web_6 {
     background: url("../images/web/006.jpg");
     background-size: cover;
-    
 }
-
 #web_7 {
     background: url("../images/web/007.jpg");
     background-size: cover;
-    
 }
+
+
+
 
 #other_1 {
     background: url("../images/others/001.jpg");
