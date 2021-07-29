@@ -257,43 +257,23 @@ body {
     background-size: cover;
 }
 #web4 {
-    background: url("../images/web/004.jpg");
+    background: url("../images/web/4.JPG");
     background-size: cover;
 }
 #web5 {
-    background: url("../images/web/005.jpg");
+    background: url("../images/web/5.JPG");
     background-size: cover;
 }
 #web6 {
-    background: url("../images/web/006.jpg");
+    background: url("../images/web/6.JPG");
     background-size: cover;
 }
 #web7 {
-    background: url("../images/web/007.jpg");
+    background: url("../images/web/7.JPG");
     background-size: cover;
 }
 
-/* #web4 {
-    background: url("../images/web/004.jpg");
-    background-size: cover;
-}
 
-#web5 {
-    background: url("../images/web/005.jpg");
-    background-size: cover;
-}
-
-#web6 {
-    background: url("../images/web/006.jpg");
-    background-size: cover;
-    
-}
-
-#web7 {
-    background: url("../images/web/007.jpg");
-    background-size: cover;
-    
-} */
 
 #other_1 {
     background: url("../images/others/001.jpg");
