@@ -312,6 +312,15 @@ body {
     width: 100%;
 }
 
+ /* 轉場 ****************************************************************/
+ .nav-link{
+    transition: 1s ease;
+}
+
+#yuchiMenu{
+    transition: 2s;
+  }
+
 /* yuchiContact********************************************************/
 
 #yuchiContent>.container {

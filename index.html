@@ -589,14 +589,16 @@
         if (nowat <= height - offset) {
 
             if (viewWidth < 767) $("#yuchiMenu").removeClass('bg-dark');
-            else $('#yuchiMenu').removeClass('bg-dark');
+            else $('#yuchiMenu').addClass('bg-dark');
+
             $("#yuchiArrow").fadeOut();
+            $('#yuchiMenu').removeClass('bg-dark');
 
         } else {
             if (viewWidth < 767) $('#yuchiMenu').addClass('bg-dark');
 
-            $('#yuchiMenu').addClass('bg-dark');
             $('#yuchiArrow').fadeIn();
+            $('#yuchiMenu').addClass('bg-dark');
         }
 
     }
